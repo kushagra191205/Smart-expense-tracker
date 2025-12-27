@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Expense Tracker</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<h1>💸 Smart Expense Tracker</h1>
+
+<div class="form">
+  <input id="title" placeholder="Expense title">
+  <input id="amount" type="number" placeholder="Amount">
+  
+  <select id="category">
+    <option>Food</option>
+    <option>Transport</option>
+    <option>Entertainment</option>
+    <option>Bills</option>
+    <option>Other</option>
+  </select>
+
+  <input type="date" id="date">
+  <button onclick="addExpense()">Add Expense</button>
+</div>
+
+<h2>Expenses</h2>
+<ul id="expenseList"></ul>
+
+<a href="dashboard.html">📊 View Analytics</a>
+
+<script src="scripts/storage.js"></script>
+<script src="scripts/models.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>
